@@ -4,7 +4,7 @@ from commandsCLI import shBGPSum
 def greetingString():
         os.system("CLS")
         print('  ------------------------------------------------- ')
-        print("    Welcome to the automated remove ACE program ")
+        print(f"    Welcome to the automated {shBGPSum} program ")
         print('  ------------------------------------------------- ')
 
 def menuString(deviceIP, username):
@@ -14,8 +14,8 @@ def menuString(deviceIP, username):
         print('\t\tMenu - Please choose an option')
         print('\t\t  Only numbers are accepted')
         print('  -------------------------------------------------------------- ')
-        print('  >\t\t1. To run the following commands:\t       <\n')
-        print(f'\t\t\t{shBGPSum}    ')      
+        print('  >\t\t1. To run the following commands:\t       <')
+        print(f'\t\t\t{shBGPSum}    \n')      
         print('  >\t\t\t2. Exit the program\t\t       <')
         print('  -------------------------------------------------------------- \n')
 

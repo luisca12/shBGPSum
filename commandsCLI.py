@@ -37,7 +37,7 @@ def showBGPSum(validIPs, username, netDevice):
                 with open(f"Outputs/{validDeviceIP}_{shBGPSum}.txt", "a") as file:
                     file.write(f"User {username} connected to device IP {validDeviceIP}\n\n")
                     authLog.info(f"User {username} is now running commands at: {validDeviceIP}")
-
+                    file.write(f"{shHostnameOut}{shBGPSum}\n")
                     print(f"INFO: Taking a {shBGPSum} for device: {validDeviceIP}")
                     shBGPSumOut = sshAccess.send_command(shBGPSum)
                     print(f"INFO: {shBGPSum} taken for device: {validDeviceIP}")
